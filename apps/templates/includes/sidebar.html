@@ -6,7 +6,7 @@
 				{% if current_user.is_authenticated %}	
 					<div class="user">
 						<div class="avatar-sm float-left mr-2">
-							<img src="/static/assets/img/profile.jpg" alt="..." class="avatar-img rounded-circle">
+							<img src="/static/assets/img/avatar.png" alt="..." class="avatar-img rounded-circle">
 						</div>
 						<div class="info">
 							<a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
@@ -37,21 +37,13 @@
 						</div>
 					</div>
 					<ul class="nav nav-primary">
+						
 						<li class="nav-item {% if 'index' in segment %} active {% endif %}">
-							<a data-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
+							<a data-toggle="#collapse" href="{{ url_for('home_blueprint.index') }}" class="collapsed" aria-expanded="false">
 								<i class="fas fa-home"></i>
-								<p>Dashboard</p>
-								<span class="caret"></span>
+								<p>Home</p>
 							</a>
-							<div class="collapse {% if 'index' in segment %} show {% endif %}" id="dashboard">
-								<ul class="nav nav-collapse">
-									<li>
-										<a href="/index.html">
-											<span class="sub-item">Dashboard</span>
-										</a>
-									</li>
-								</ul>
-							</div>
+							
 						</li>
 						<li class="nav-section">
 							<span class="sidebar-mini-icon">
@@ -290,18 +282,18 @@
 						</li>
 						<li class="mx-4 mt-2">
                             <a target="_blank"
-                               href="https://appseed.us/admin-dashboards/flask-dashboard-atlantis-dark-pro" 
+                               href="http://tmgroup.com.eg/contact-us/" 
                                class="btn btn-danger btn-block">
-                                <span class="btn-label mr-2"> <i class="fa fa-rocket"></i> </span>PRO Version</a> 
+                                <span class="btn-label mr-2"> <i class="fa icon-tag"></i> </span>Open a ticket</a> 
 						</li>
 					</ul>
 				{% else %}
 					<ul class="nav nav-primary">
 						<li class="mx-4 mt-2">
                             <a target="_blank"
-                               href="https://appseed.us/admin-dashboards/flask-dashboard-atlantis-dark-pro" 
+                               href="{{ url_for('authentication_blueprint.register') }}" 
                                class="btn btn-danger btn-block">
-                                <span class="btn-label mr-2"> <i class="fa fa-rocket"></i> </span>PRO Version</a> 
+                                <span class="btn-label mr-2"> <i class="fa icon-tag"></i> </span>Access Request</a> 
 						</li>
 					</ul>
 				{% endif %}	
