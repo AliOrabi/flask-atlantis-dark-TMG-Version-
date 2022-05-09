@@ -97,6 +97,11 @@ def register():
         return render_template('accounts/register.html', form=create_account_form)
 
 
+# user account [Need to implement again!]
+@blueprint.route('/accounts', methods=['GET', 'POST'])
+def account():
+    return redirect(url_for('accounts/account.html'))
+
 @blueprint.route('/logout')
 def logout():
     logout_user()
