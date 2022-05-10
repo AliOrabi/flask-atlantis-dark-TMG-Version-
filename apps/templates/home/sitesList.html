@@ -1,0 +1,201 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} UI Datatables {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+	<div class="content">
+		<div class="page-inner">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="card">
+						<div class="card-header">
+							<div class="page-header">
+								<h4 class="page-title">ALL SITES</h4>
+								<ul class="breadcrumbs">
+									<li class="nav-home">
+										<a href="/index.html">
+											<i class="flaticon-home"></i>
+										</a>
+									</li>
+									<li class="separator">
+										<i class="flaticon-right-arrow"></i>
+									</li>
+									<li class="nav-item">
+										<a href="#">Sites</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="table-responsive">
+								<table id="basic-datatables" class="display table table-striped table-hover" >
+									<thead>
+										<tr>
+											<th><i class="flaticon-star-1"></i></th>
+											<th>Site ID</th>
+											<th>Device Type</th>
+											<th>Owner</th>
+											<th>SMS Number</th>
+											<th>Serial No.</th>
+											<th>Address</th>
+											<th>Last Call In</th>
+											<th>Expiry Date</th>
+											<th>Graph</th>
+										</tr>
+									</thead>
+									
+									<tbody>
+										<tr>
+											<th><i class="flaticon-star-1"></i></th>
+											<th>FYM_1</th>
+											<td>Multilog2 5.02</td>
+											<td>S.M Admin</td>
+											<td>Edinburgh</td>
+											<td>000061</td>
+											<td>TAMIAH STATION محطة طامية</td>
+											<td>09-May-2022, 02:30</td>
+											<th>08-Mar-2026</th>
+											<th>
+												<a href="/charts.html" style="text-underline-offset: none;">
+													<i class="icon-graph" style="color: crimson;"></i>
+												</a>
+											</th>
+										</tr>
+										<tr>
+											<th><i class="flaticon-star-1"></i></th>
+											<th>FYM_2</th>
+											<td>Multilog2 5.08</td>
+											<td>S.M Admin</td>
+											<td>Tokyo</td>
+											<td>000063</td>
+											<td>TAMIAH STATION محطة طامية</td>
+											<td>09-May-2022, 02:30</td>
+											<th>09-Mar-2026</th>
+											<th></th>
+										</tr>
+										<tr>
+											<th><i class="flaticon-star-1"></i></th>
+											<th>FYM_3</th>
+											<td>Multilog2 5.02</td>
+											<td>S.M Admin</td>
+											<td>San Francisco</td>
+											<td>000066</td>
+											<td>TAMIAH STATION محطة طامية</td>
+											<td>09-May-2022, 02:30</td>
+											<th>10-Mar-2026</th>
+											<th></th>
+										</tr>
+										<tr>
+											<th><i class="flaticon-star-1"></i></th>
+											<th>FYM_4</th>
+											<td>Multilog2 5.04</td>
+											<td>S.M Admin</td>
+											<td>Edinburgh</td>
+											<td>000022</td>
+											<td>TAMIAH STATION محطة طامية</td>
+											<td>09-May-2022, 02:30</td>
+											<th>11-Mar-2026</th>
+											<th></th>
+										</tr>
+										<tr>
+											<th><i class="flaticon-star-1"></i></th>
+											<th>FYM_5</th>
+											<td>Multilog2 5.04</td>
+											<td>S.M Admin</td>
+											<td>Tokyo</td>
+											<td>000033</td>
+											<td>ELAZAB-ELKADIMA_STATION OUTLET المرحلة الأولى</td>
+											<td>09-May-2022, 02:30</td>
+											<th>12-Mar-2026</th>
+											<th></th>
+										</tr>
+										<tr>
+											<th><i class="flaticon-star-1"></i></th>
+											<th>FYM_6</th>
+											<td>Multilog2 5.02</td>
+											<td>S.M Admin</td>
+											<td>New York</td>
+											<td>000061</td>
+											<td>ELAZAB-ELKADIMA_STATION OUTLET خط الجيش</td>
+											<td>09-May-2022, 02:30</td>
+											<th>12-Mar-2026</th>
+											<th></th>
+										</tr>
+										<tr>
+											<th><i class="flaticon-star-1"></i></th>
+											<th>FYM_7</th>
+											<td>Multilog2 5.05</td>
+											<td>S.M Admin</td>
+											<td>San Francisco</td>
+											<td>000059</td>
+											<td>ELAZAB-ELKADIMA_STATION OUTLET خط الصعيد</td>
+											<td>09-May-2022, 02:30</td>
+											<th>13-Mar-2026</th>
+											<th></th>
+										</tr>
+										<tr>
+											<th><i class="flaticon-star-1"></i></th>
+											<th>FYM_8</th>
+											<td>Multilog2 5.04</td>
+											<td>S.M Admin</td>
+											<td>Tokyo</td>
+											<td>000055</td>
+											<td>EL-RAYAN DN250</td>
+											<td>09-May-2022, 02:30</td>
+											<th>14-Mar-2026</th>
+											<th></th>
+										</tr>
+										
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+	<!-- Atlantis DEMO methods, don't include it in your project! -->
+	<script src="/static/assets/js/setting-demo2.js"></script>
+	<script >
+		$(document).ready(function() {
+			$('#basic-datatables').DataTable({
+			});
+
+			$('#multi-filter-select').DataTable( {
+				"pageLength": 5,
+				initComplete: function () {
+					this.api().columns().every( function () {
+						var column = this;
+						var select = $('<select class="form-control"><option value=""></option></select>')
+						.appendTo( $(column.footer()).empty() )
+						.on( 'change', function () {
+							var val = $.fn.dataTable.util.escapeRegex(
+								$(this).val()
+								);
+
+							column
+							.search( val ? '^'+val+'$' : '', true, false )
+							.draw();
+						} );
+
+						column.data().unique().sort().each( function ( d, j ) {
+							select.append( '<option value="'+d+'">'+d+'</option>' )
+						} );
+					} );
+				}
+			});
+		});
+	</script>
+
+{% endblock javascripts %}

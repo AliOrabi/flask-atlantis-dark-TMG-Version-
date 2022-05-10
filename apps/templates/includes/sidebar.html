@@ -4,38 +4,7 @@
 				<div class="sidebar-content">
 
 				{% if current_user.is_authenticated %}	
-					<div class="user">
-						<div class="avatar-sm float-left mr-2">
-							<img src="/static/assets/img/avatar.png" alt="..." class="avatar-img rounded-circle">
-						</div>
-						<div class="info">
-							<a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
-								<span>
-									{{ current_user.username }}
-									<span class="user-level">
-										{{ current_user.email }}
-									</span>
-									<span class="caret"></span>
-								</span>
-							</a>
-							<div class="clearfix"></div>
-
-							<div class="collapse in" id="collapseExample">
-								<ul class="nav">
-									<li>
-										<a href="#profile">
-											<span class="link-collapse">My Profile</span>
-										</a>
-									</li>
-									<li>
-										<a href="{{ url_for('authentication_blueprint.logout') }}">
-											<span class="link-collapse">Logout</span>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
+					
 					<ul class="nav nav-primary">
 						
 						<li class="nav-item {% if 'index' in segment %} active {% endif %}">
@@ -43,25 +12,26 @@
 								<i class="fas fa-home"></i>
 								<p>Home</p>
 							</a>
-							
 						</li>
 						<li class="nav-section">
 							<span class="sidebar-mini-icon">
 								<i class="fa fa-ellipsis-h"></i>
 							</span>
-							<h4 class="text-section">Components</h4>
+							<h4 class="text-section" style="color: aliceblue;">Management</h4>
 						</li>
+						<!--Start New Menu Here-->
+						<!--New Menu End-->
 						<li class="nav-item {% if 'ui-' in segment %} active {% endif %}">
-							<a data-toggle="collapse" href="#base">
-								<i class="fas fa-layer-group"></i>
-								<p>Base</p>
+							<a data-toggle="collapse" href="#sites">
+								<i class="fas fa-map-marked"></i>
+								<p>Sites</p>
 								<span class="caret"></span>
 							</a>
-							<div class="collapse {% if 'ui-' in segment %} show {% endif %}" id="base">
+							<div class="collapse {% if 'ui-' in segment %} show {% endif %}" id="sites">
 								<ul class="nav nav-collapse">
 									<li class="{% if 'ui-avatars' in segment %} active {% endif %}">
-										<a href="/ui-avatars.html">
-											<span class="sub-item">Avatars</span>
+										<a href="/sitesList.html">
+											<span class="sub-item">All Sites</span>
 										</a>
 									</li>
 									<li class="{% if 'ui-buttons' in segment %} active {% endif %}">
