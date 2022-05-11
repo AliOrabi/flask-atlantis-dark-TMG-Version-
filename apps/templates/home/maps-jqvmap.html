@@ -52,11 +52,11 @@
 			normalizeFunction: 'linear',
 			scaleColors: ['#b6d6ff', '#005ace'],
 			selectedColor: '#35cd3a',
-			selectedRegions: ['ID', 'RU', 'US', 'AU'],
+			selectedRegions: ['EG'],
 			showTooltip: true,
 			onRegionClick: function(element, code, region)
 			{
-				return false;
+				return true;
 			},
 			onResize: function (element, width, height) {
 				console.log('Map Size: ' +  width + 'x' +  height);
