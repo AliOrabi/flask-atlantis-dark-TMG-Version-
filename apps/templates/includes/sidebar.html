@@ -17,7 +17,7 @@
 							<span class="sidebar-mini-icon">
 								<i class="fa fa-ellipsis-h"></i>
 							</span>
-							<h4 class="text-section" style="color: aliceblue;">Management</h4>
+							<h4 class="text-section">Management</h4>
 						</li>
 						<!--Start New Menu Here-->
 						<!--New Menu End-->
@@ -106,9 +106,23 @@
 						<li class="nav-item {% if 'form' in segment %} active {% endif %}">
 							<a data-toggle="collapse" href="#forms">
 								<i class="fas fa-pen-square"></i>
-								<p>Forms</p>
+								<p>Data</p>
 								<span class="caret"></span>
 							</a>
+							<div class="collapse {% if 'forms' in segment %} show {% endif %}" id="forms">
+								<ul class="nav nav-collapse">
+									<li class="{% if 'forms' in segment %} active {% endif %}">
+										<a href="/chartss.html">
+											<span class="sub-item">View Data</span>
+										</a>
+									</li>
+									<li class="{% if 'forms' in segment %} active {% endif %}">
+										<a href="/chartss.html">
+											<span class="sub-item">View Alarms</span>
+										</a>
+									</li>
+								</ul>
+							</div>
 							<div class="collapse {% if 'forms' in segment %} show {% endif %}" id="forms">
 								<ul class="nav nav-collapse">
 									<li class="{% if 'forms' in segment %} active {% endif %}">
