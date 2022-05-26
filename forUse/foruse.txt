@@ -1,40 +1,7 @@
-{% extends "layouts/base.html" %}
+<div class="card">
+ <div class="card-body">
 
-{% block title %} UI Gridsystem {% endblock %} 
-
-<!-- Specific Page CSS goes HERE  -->
-{% block stylesheets %}{% endblock stylesheets %}
-
-{% block content %}
-
-	<div class="content">
-		<div class="page-inner">
-			<div class="page-header">
-				<h4 class="page-title">Grid System</h4>
-				<ul class="breadcrumbs">
-					<li class="nav-home">
-						<a href="#">
-							<i class="flaticon-home"></i>
-						</a>
-					</li>
-					<li class="separator">
-						<i class="flaticon-right-arrow"></i>
-					</li>
-					<li class="nav-item">
-						<a href="#">Base</a>
-					</li>
-					<li class="separator">
-						<i class="flaticon-right-arrow"></i>
-					</li>
-					<li class="nav-item">
-						<a href="#">Grid System</a>
-					</li>
-				</ul>
-			</div>
-			<div class="card">
-				<div class="card-body">
-
-					<h4 class="card-title mt-3">XL Grid</h4>
+					<h4 class="card-title mt-3">Ouiet Lists</h4>
 					<div class="row row-demo-grid">
 						<div class="col-xl-4">
 							<div class="card">
@@ -278,15 +245,3 @@
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-
-{% endblock content %}
-
-<!-- Specific Page JS goes HERE  -->
-{% block javascripts %}
-
-	<!-- Atlantis DEMO methods, don't include it in your project! -->
-	<script src="/static/assets/js/setting-demo2.js"></script>
-
-{% endblock javascripts %}	
