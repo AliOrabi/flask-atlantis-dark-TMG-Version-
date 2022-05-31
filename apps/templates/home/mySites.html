@@ -1,0 +1,560 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} My Sites {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+	<div class="content">
+		<div class="page-inner">
+			<div class="page-header">
+				<h4 class="page-title"> My Sites</h4>
+				<ul class="breadcrumbs">
+					<li class="nav-home">
+						<a href="index.html">
+							<i class="flaticon-home"></i>
+						</a>
+					</li>
+					<li class="separator">
+						<i class="flaticon-right-arrow"></i>
+					</li>
+					<li class="nav-item">
+						<a href="sitesList.html">Sites</a>
+					</li>
+					<li class="separator">
+						<i class="flaticon-right-arrow"></i>
+					</li>
+					<li class="nav-item">
+						<a href="#"> My Sites</a>
+					</li>
+				</ul>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="card">
+						<div class="card-body">
+							<div class="table-responsive">
+								<table id="basic-datatables" class="display table table-striped table-hover" >
+									<thead style="color: white; background-color:blue";>
+										<tr>
+											<th><i id="addstar" class="flaticon-star-1"></i></th>
+											<th>Site ID</th>
+											<th>Device Type</th>
+											<th>Owner</th>
+											<th>SMS Number</th>
+											<th>Serial No.</th>
+											<th>Address</th>
+											<th>Last Call In</th>
+											<th>Expiry Date</th>
+											<th>Graph</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th><i class="flaticon-star-1"></i></th>
+											<th>FYM_1</th>
+											<td>Multilog2 5.02</td>
+											<td>S.M Admin</td>
+											<td>00201000254206</td>
+											<td>000061</td>
+											<td>TAMIAH STATION محطة طامية</td>
+											<td>09-May-2022, 02:30</td>
+											<th>08-Mar-2026</th>
+											<th>
+												<a href="/charts.html" style="text-underline-offset: none;">
+													<i class="icon-graph" style="color: crimson;"></i>
+												</a>
+											</th>
+										</tr>
+										<tr>
+											<th><i class="flaticon-star-1"></i></th>
+											<th>FYM_2</th>
+											<td>Multilog2 5.08</td>
+											<td>S.M Admin</td>
+											<td>00201000254206</td>
+											<td>000062</td>
+											<td>TAMIAH STATION محطة طامية</td>
+											<td>09-May-2022, 02:30</td>
+											<th>08-Mar-2026</th>
+											<th>
+												<a href="/charts.html" style="text-underline-offset: none;">
+													<i class="icon-graph" style="color: crimson;"></i>
+												</a>
+											</th>
+										</tr>
+										<tr>
+											<th><i class="flaticon-star-1"></i></th>
+											<th>FYM_3</th>
+											<td>Multilog2 2.05</td>
+											<td>S.M Admin</td>
+											<td>00201000254201</td>
+											<td>000063</td>
+											<td>TAMIAH STATION</td>
+											<td>09-May-2022, 02:45</td>
+											<th>08-Mar-2026</th>
+											<th>
+												<a href="/charts.html" style="text-underline-offset: none;">
+													<i class="icon-graph" style="color: crimson;"></i>
+												</a>
+											</th>
+										</tr>
+										<tr>
+											<th><i class="flaticon-star-1"></i></th>
+											<th>FYM_1</th>
+											<td>Multilog2 5.02</td>
+											<td>S.M Admin</td>
+											<td>00201000254206</td>
+											<td>000061</td>
+											<td>TAMIAH STATION محطة طامية</td>
+											<td>09-May-2022, 02:30</td>
+											<th>08-Mar-2026</th>
+											<th>
+												<a href="/charts.html" style="text-underline-offset: none;">
+													<i class="icon-graph" style="color: crimson;"></i>
+												</a>
+											</th>
+										</tr>
+										<tr>
+											<th><i class="flaticon-star-1"></i></th>
+											<th>FYM_2</th>
+											<td>Multilog2 5.08</td>
+											<td>S.M Admin</td>
+											<td>00201000254206</td>
+											<td>000062</td>
+											<td>TAMIAH STATION محطة طامية</td>
+											<td>09-May-2022, 02:30</td>
+											<th>08-Mar-2026</th>
+											<th>
+												<a href="/charts.html" style="text-underline-offset: none;">
+													<i class="icon-graph" style="color: crimson;"></i>
+												</a>
+											</th>
+										</tr>
+										<tr>
+											<th><i class="flaticon-star-1"></i></th>
+											<th>FYM_3</th>
+											<td>Multilog2 2.05</td>
+											<td>S.M Admin</td>
+											<td>00201000254201</td>
+											<td>000063</td>
+											<td>TAMIAH STATION</td>
+											<td>09-May-2022, 02:45</td>
+											<th>08-Mar-2026</th>
+											<th>
+												<a href="/charts.html" style="text-underline-offset: none;">
+													<i class="icon-graph" style="color: crimson;"></i>
+												</a>
+											</th>
+										</tr>
+										<tr>
+											<th><i class="flaticon-star-1"></i></th>
+											<th>FYM_1</th>
+											<td>Multilog2 5.02</td>
+											<td>S.M Admin</td>
+											<td>00201000254206</td>
+											<td>000061</td>
+											<td>TAMIAH STATION محطة طامية</td>
+											<td>09-May-2022, 02:30</td>
+											<th>08-Mar-2026</th>
+											<th>
+												<a href="/charts.html" style="text-underline-offset: none;">
+													<i class="icon-graph" style="color: crimson;"></i>
+												</a>
+											</th>
+										</tr>
+										<tr>
+											<th><i class="flaticon-star-1"></i></th>
+											<th>FYM_2</th>
+											<td>Multilog2 5.08</td>
+											<td>S.M Admin</td>
+											<td>00201000254206</td>
+											<td>000062</td>
+											<td>TAMIAH STATION محطة طامية</td>
+											<td>09-May-2022, 02:30</td>
+											<th>08-Mar-2026</th>
+											<th>
+												<a href="/charts.html" style="text-underline-offset: none;">
+													<i class="icon-graph" style="color: crimson;"></i>
+												</a>
+											</th>
+										</tr>
+										<tr>
+											<th><i class="flaticon-star-1"></i></th>
+											<th>FYM_3</th>
+											<td>Multilog2 2.05</td>
+											<td>S.M Admin</td>
+											<td>00201000254201</td>
+											<td>000063</td>
+											<td>TAMIAH STATION</td>
+											<td>09-May-2022, 02:45</td>
+											<th>08-Mar-2026</th>
+											<th>
+												<a href="/charts.html" style="text-underline-offset: none;">
+													<i class="icon-graph" style="color: crimson;"></i>
+												</a>
+											</th>
+										</tr>
+										<tr>
+											<th><i class="flaticon-star-1"></i></th>
+											<th>FYM_1</th>
+											<td>Multilog2 5.02</td>
+											<td>S.M Admin</td>
+											<td>00201000254206</td>
+											<td>000061</td>
+											<td>TAMIAH STATION محطة طامية</td>
+											<td>09-May-2022, 02:30</td>
+											<th>08-Mar-2026</th>
+											<th>
+												<a href="/charts.html" style="text-underline-offset: none;">
+													<i class="icon-graph" style="color: crimson;"></i>
+												</a>
+											</th>
+										</tr>
+										<tr>
+											<th><i class="flaticon-star-1"></i></th>
+											<th>FYM_2</th>
+											<td>Multilog2 5.08</td>
+											<td>S.M Admin</td>
+											<td>00201000254206</td>
+											<td>000062</td>
+											<td>TAMIAH STATION محطة طامية</td>
+											<td>09-May-2022, 02:30</td>
+											<th>08-Mar-2026</th>
+											<th>
+												<a href="/charts.html" style="text-underline-offset: none;">
+													<i class="icon-graph" style="color: crimson;"></i>
+												</a>
+											</th>
+										</tr>
+										<tr>
+											<th><i class="flaticon-star-1"></i></th>
+											<th>FYM_3</th>
+											<td>Multilog2 2.05</td>
+											<td>S.M Admin</td>
+											<td>00201000254201</td>
+											<td>000063</td>
+											<td>TAMIAH STATION</td>
+											<td>09-May-2022, 02:45</td>
+											<th>08-Mar-2026</th>
+											<th>
+												<a href="/charts.html" style="text-underline-offset: none;">
+													<i class="icon-graph" style="color: crimson;"></i>
+												</a>
+											</th>
+										</tr>
+										<tr>
+											<th><i class="flaticon-star-1"></i></th>
+											<th>FYM_1</th>
+											<td>Multilog2 5.02</td>
+											<td>S.M Admin</td>
+											<td>00201000254206</td>
+											<td>000061</td>
+											<td>TAMIAH STATION محطة طامية</td>
+											<td>09-May-2022, 02:30</td>
+											<th>08-Mar-2026</th>
+											<th>
+												<a href="/charts.html" style="text-underline-offset: none;">
+													<i class="icon-graph" style="color: crimson;"></i>
+												</a>
+											</th>
+										</tr>
+										<tr>
+											<th><i class="flaticon-star-1"></i></th>
+											<th>FYM_2</th>
+											<td>Multilog2 5.08</td>
+											<td>S.M Admin</td>
+											<td>00201000254206</td>
+											<td>000062</td>
+											<td>TAMIAH STATION محطة طامية</td>
+											<td>09-May-2022, 02:30</td>
+											<th>08-Mar-2026</th>
+											<th>
+												<a href="/charts.html" style="text-underline-offset: none;">
+													<i class="icon-graph" style="color: crimson;"></i>
+												</a>
+											</th>
+										</tr>
+										<tr>
+											<th><i class="flaticon-star-1"></i></th>
+											<th>FYM_3</th>
+											<td>Multilog2 2.05</td>
+											<td>S.M Admin</td>
+											<td>00201000254201</td>
+											<td>000063</td>
+											<td>TAMIAH STATION</td>
+											<td>09-May-2022, 02:45</td>
+											<th>08-Mar-2026</th>
+											<th>
+												<a href="/charts.html" style="text-underline-offset: none;">
+													<i class="icon-graph" style="color: crimson;"></i>
+												</a>
+											</th>
+										</tr>
+										<tr>
+											<th><i class="flaticon-star-1"></i></th>
+											<th>FYM_1</th>
+											<td>Multilog2 5.02</td>
+											<td>S.M Admin</td>
+											<td>00201000254206</td>
+											<td>000061</td>
+											<td>TAMIAH STATION محطة طامية</td>
+											<td>09-May-2022, 02:30</td>
+											<th>08-Mar-2026</th>
+											<th>
+												<a href="/charts.html" style="text-underline-offset: none;">
+													<i class="icon-graph" style="color: crimson;"></i>
+												</a>
+											</th>
+										</tr>
+										<tr>
+											<th><i class="flaticon-star-1"></i></th>
+											<th>FYM_2</th>
+											<td>Multilog2 5.08</td>
+											<td>S.M Admin</td>
+											<td>00201000254206</td>
+											<td>000062</td>
+											<td>TAMIAH STATION محطة طامية</td>
+											<td>09-May-2022, 02:30</td>
+											<th>08-Mar-2026</th>
+											<th>
+												<a href="/charts.html" style="text-underline-offset: none;">
+													<i class="icon-graph" style="color: crimson;"></i>
+												</a>
+											</th>
+										</tr>
+										<tr>
+											<th><i class="flaticon-star-1"></i></th>
+											<th>FYM_3</th>
+											<td>Multilog2 2.05</td>
+											<td>S.M Admin</td>
+											<td>00201000254201</td>
+											<td>000063</td>
+											<td>TAMIAH STATION</td>
+											<td>09-May-2022, 02:45</td>
+											<th>08-Mar-2026</th>
+											<th>
+												<a href="/charts.html" style="text-underline-offset: none;">
+													<i class="icon-graph" style="color: crimson;"></i>
+												</a>
+											</th>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="card">
+						<div class="card-header">
+							<div class="d-flex align-items-center">
+								<h4 class="card-title"> Generate Fleet Report.</h4>
+							</div>
+						</div>
+						<div class="card-body">
+							<!-- Report Filter -->
+							<div class="row">
+								<div class="col-md-6 col-lg-4">
+									<div class="form-group">
+										<label>
+											<input name="channelsettings" type="checkbox" id="channelsettings" class="checkbox" data-id="channelsetting" />
+											Channel Settings
+										</label>
+										<label>
+											<input name="ctl00$ContentPlaceHolder1$siteListInfo$cbfr_meterreads" type="checkbox" id="cbfr_meterreads" class="fleetreport_checkbox" data-id="meterreads" />
+											Meter Readings
+										</label>
+										<div id="FleetReportMeterReadOptions">
+											<span>
+												<label>
+													<input name="ctl00$ContentPlaceHolder1$siteListInfo$cbfr_includemeterdate" type="checkbox" id="cbfr_includemeterdate" class="fleetreport_checkbox" data-id="includemeterdate" />
+													Time
+												</label>
+											</span>
+											<input name="ctl00$ContentPlaceHolder1$siteListInfo$cbfr_meterreaddate" type="text" value="17-05-2022 00:00:00" id="cbfr_meterreaddate" class="fleetreport_text" />
+										</div>
+										<label>
+											<input name="ctl00$ContentPlaceHolder1$siteListInfo$cbfr_callinsettings" type="checkbox" id="cbfr_callinsettings" class="fleetreport_checkbox" data-id="callinsettings" />
+											Call-in-settings
+										</label>
+										<label>
+											<input name="ctl00$ContentPlaceHolder1$siteListInfo$cbfr_rst" type="checkbox" id="cbfr_rst" class="heckbox" data-id="rst" />
+											Install Times
+										</label>
+										<label>
+											<input name="ctl00$ContentPlaceHolder1$siteListInfo$cbfr_callinreport" type="checkbox" id="cbfr_callinreport" class="fleetreport_checkbox" data-id="callinreport" />
+											Call-in-report
+										</label>
+										<div id="">
+											<input name="callindays" type="text" value="7" maxlength="3" id="cbfr_callindays" class="text" style="width:36px;" />
+											<span id="Label6">Days</span>
+											<span>
+												<label>
+													<input name="includetoday" type="checkbox" id="cbfr_includetoday" class="checkbox" data-id="includetoday" />
+													Include Today
+												</label>
+											</span>
+										</div>
+										<label>
+											<input name="ctl00$ContentPlaceHolder1$siteListInfo$cbfr_location" type="checkbox" id="cbfr_location" class="fleetreport_checkbox" data-id="location" />
+											Locations
+										</label>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4">
+									<div class="form-group">
+										<label class="form-check-label">
+											<input name="parameterreport" type="checkbox" id="cbfr_parameterreport" class="form-check-input" data-id="parameterreport" />
+											Parameter Report
+										</label>
+										<div id="FleetReportParameterOptions">
+											<label class="form-check-label">
+												<input name="ctl00$ContentPlaceHolder1$siteListInfo$cbfr_pressureflatlines" type="checkbox" id="cbfr_pressureflatlines" class="form-check-input" data-id="pressureflatlines" />
+												Flatlines</label>
+											<label class="form-check-label">
+												<input name="ctl00$ContentPlaceHolder1$siteListInfo$cbfr_overpressures" type="checkbox" id="cbfr_overpressures" class="form-check-input" data-id="overpressures" />
+												Over Reading
+												<input name="ctl00$ContentPlaceHolder1$siteListInfo$cbfr_overreading" type="text" value="100" maxlength="4" id="cbfr_overreading" class="fleetreport_text" style="width:36px;" />
+											</label>
+											<label class="form-check-label">
+												<input name="ctl00$ContentPlaceHolder1$siteListInfo$cbfr_negativepressures" type="checkbox" id="cbfr_negativepressures" class="form-check-input" data-id="negativepressures" />
+												Negative Values
+											</label>
+											<label class="form-check-label">
+												<input type="checkbox" id="cbfr_zeroflows" class="form-check-input" data-id="zeroflows" />
+												Zero Values
+											</label>
+											<label class="form-inline">
+												<span class="form-check-sign" id="Label1">Period<input type="text" value="24" maxlength="5" id="parameterreporthours" class="text" style="width:40px;" /><span class="form-check-sign" id="Label4">Hours</span></span>
+											
+											</label>
+										</div>
+					
+										<label>
+											<input name="ctl00$ContentPlaceHolder1$siteListInfo$cbfr_alarmsettings" type="checkbox" id="cbfr_alarmsettings" class="form-check-input" data-id="alarmsettings" />
+											Alarm Settings
+										</label>
+										<div id="FleetReportAlarmSettingsOptions">
+											<label>
+												<input name="ctl00$ContentPlaceHolder1$siteListInfo$cbfr_inAlarmFilter" type="checkbox" id="cbfr_inAlarmFilter" class="form-check-input" data-id="inAlarmFilter" />
+												Only show sites in alarm
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4">
+									<div class="form-group">
+										<label>
+											<input name="ctl00$ContentPlaceHolder1$siteListInfo$chfr_SensorSerialNumber" type="checkbox" id="chfr_SensorSerialNumber" class="fleetreport_checkbox" data-id="sensorserialnumber" />
+											Sensor Serial Number
+										</label>
+										<label>
+											<input name="ctl00$ContentPlaceHolder1$siteListInfo$chfr_BatteryReplacement" type="checkbox" id="chfr_BatteryReplacement" class="fleetreport_checkbox" data-id="batteryReplacemnet" />
+											Last Battery Replacement
+										</label>
+										<label>
+											<input name="ctl00$ContentPlaceHolder1$siteListInfo$chfr_BatteryReplacementNext" type="checkbox" id="chfr_BatteryReplacementNext" class="fleetreport_checkbox" data-id="batteryReplacemnetnext" />
+											Next Battery Replacement Due
+										</label>
+										<label>
+											<input name="ctl00$ContentPlaceHolder1$siteListInfo$chfr_MaintenanceNotes" type="checkbox" id="chfr_MaintenanceNotes" class="fleetreport_checkbox" data-id="MaintainceNotes" />
+											Maintenance Notes
+										</label>
+										<label>
+											<input name="ctl00$ContentPlaceHolder1$siteListInfo$chfr_ExternalBattery" type="checkbox" id="chfr_ExternalBattery" class="fleetreport_checkbox" data-id="externalbattery" />
+											External Battery
+										</label>
+										<div id="PAAWsetting">
+											<label>
+												<input name="ctl00$ContentPlaceHolder1$siteListInfo$chfr_PipeSize" type="checkbox" id="chfr_PipeSize" class="fleetreport_checkbox" data-id="pipesize" />
+												Pipe Size
+											</label>
+											<label>
+												<input name="ctl00$ContentPlaceHolder1$siteListInfo$chfr_PipeMaterial" type="checkbox" id="chfr_PipeMaterial" class="fleetreport_checkbox" data-id="pipematerial" />
+												Pipe Material
+											</label>
+											<label>
+												<input name="ctl00$ContentPlaceHolder1$siteListInfo$chfr_ValveLidModified" type="checkbox" id="chfr_ValveLidModified" class="fleetreport_checkbox" data-id="valvelidmodified" />
+												Valve Lid Modified
+											</label>
+											<label>
+												<input name="ctl00$ContentPlaceHolder1$siteListInfo$chfr_ServiceDate" type="checkbox" id="chfr_ServiceDate" class="fleetreport_checkbox" data-id="servicedate" />
+												Service Date
+											</label>
+											<label>
+												<input name="ctl00$ContentPlaceHolder1$siteListInfo$chfr_WarrantyExpireDate" type="checkbox" id="chfr_WarrantyExpireDate" class="fleetreport_checkbox" data-id="warrantyexpire" />
+												Warranty Expire Date
+											</label>
+											<label>
+												<input name="ctl00$ContentPlaceHolder1$siteListInfo$chfr_EquipmentServiceCost" type="checkbox" id="chfr_EquipmentServiceCost" class="fleetreport_checkbox" data-id="equipmentservicecost" />
+												Equipment Service Cost
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-check">
+									<button id="btn-checked" class="btn btn-checked">
+										<span> Select All</span>
+									</button>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-4">
+								<div class="form-group">
+									<label for="email2">Email:</label>
+									<input type="email" class="form-control" id="email2" placeholder="">
+								</div>
+								<div class="form-group">
+									<label for="filename">Fleet Report Filename :</label>
+									<input type="filename" class="form-control" id="filename" placeholder="">
+								</div>
+								<div>
+									<input type="submit" name="submitFleetReport" value="Request all sites to be exported" id="btn_submit" class="btn btn_submit">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+	<!-- Atlantis DEMO methods, don't include it in your project! -->
+	<script src="/static/assets/js/setting-demo2.js"></script>
+	<script >
+		$(document).ready(function() {
+			$('#basic-datatables').DataTable({
+			});
+
+			$('#multi-filter-select').DataTable( {
+				"pageLength": 5,
+				initComplete: function () {
+					this.api().columns().every( function () {
+						var column = this;
+						var select = $('<select class="form-control"><option value=""></option></select>')
+						.appendTo( $(column.footer()).empty() )
+						.on( 'change', function () {
+							var val = $.fn.dataTable.util.escapeRegex(
+								$(this).val()
+								);
+
+							column
+							.search( val ? '^'+val+'$' : '', true, false )
+							.draw();
+						} );
+
+						column.data().unique().sort().each( function ( d, j ) {
+							select.append( '<option value="'+d+'">'+d+'</option>' )
+						} );
+					} );
+				}
+			});
+		});
+	</script>
+{% endblock javascripts %}

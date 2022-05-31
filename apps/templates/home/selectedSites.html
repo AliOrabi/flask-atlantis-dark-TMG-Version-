@@ -1,0 +1,85 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Selected Sites {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+	<div class="content">
+		<div class="page-inner">
+			<div class="page-header">
+				<h4 class="page-title">Selected Sites</h4>
+				<ul class="breadcrumbs">
+					<li class="nav-home">
+						<a href="index.html">
+							<i class="flaticon-home"></i>
+						</a>
+					</li>
+					<li class="separator">
+						<i class="flaticon-right-arrow"></i>
+					</li>
+					<li class="nav-item">
+						<a href="sitesList.html">Sites</a>
+					</li>
+					<li class="separator">
+						<i class="flaticon-right-arrow"></i>
+					</li>
+					<li class="nav-item">
+						<a href="#">Selected Sites</a>
+					</li>
+				</ul>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="card">
+						
+						<div class="card-body">
+							<div class="row">
+								<div id="SelectedSiteLists" class="SelectedSiteLists">
+									<div class="TopBorder">
+										<h4>Load/Save Selected Sites</h4>
+										<table class="form-control form-control">
+											<tbody>
+												<tr>
+													<td></td>
+													<td style="padding-left:5px; padding-right:5px;"></td>
+													<td>
+														<div id="">
+															<span id="">Load Selected Sites List:</span>
+															<select name="" id="" style="width:300px;">
+																<option value="1">MMM</option>
+																<option value="2">qw</option>
+																<option value="3">???? ????? ???????</option>
+																<option value="4">ELAZAB-ELKADIMA</option>
+																<option value="5"> ELAZAB- ELGDEDA</option>
+																<option value="6">water plant fayoum</option>
+															</select>
+															<input type="button" name="" value="Load"  id="" class="btn btn-primary btn-sm">
+														</div>
+													</td>
+												</tr>
+												<tr></tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+	<!-- Atlantis DEMO methods, don't include it in your project! -->
+	<script src="/static/assets/js/setting-demo2.js"></script>
+
+{% endblock javascripts %}	

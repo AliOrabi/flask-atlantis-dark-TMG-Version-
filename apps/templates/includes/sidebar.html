@@ -13,21 +13,21 @@
 								<p>Home</p>
 							</a>
 						</li>
+
 						<li class="nav-section">
 							<span class="sidebar-mini-icon">
 								<i class="fa fa-ellipsis-h"></i>
 							</span>
 							<h4 class="text-section">Management</h4>
 						</li>
-						<!--Start New Menu Here-->
-						<!--New Menu End-->
+						
 						<li class="nav-item {% if 'ui-' in segment %} active {% endif %}">
 							<a data-toggle="collapse" href="#sites">
 								<i class="fas fa-map-marked"></i>
 								<p>Sites</p>
 								<span class="caret"></span>
 							</a>
-							<div class="collapse {% if 'ui-' in segment %} show {% endif %}" id="sites">
+							<div class="collapse {% if 'Sites' in segment %} show {% endif %}" id="sites">
 								<ul class="nav nav-collapse">
 									<li class="{% if 'siteList' in segment %} active {% endif %}">
 										<a href="/sitesList.html">
@@ -39,34 +39,35 @@
 											<span class="sub-item">Associated Sites</span>
 										</a>
 									</li>
-									<li class="{% if 'ui-gridsystem' in segment %} active {% endif %}">
+									<li class="{% if 'quietSites' in segment %} active {% endif %}">
 										<a href="/quietSites.html">
 											<span class="sub-item">Non Communicating (Quiet) Sites</span>
 										</a>
 									</li>
-									<li class="{% if 'ui-panels' in segment %} active {% endif %}">
-										<a href="/ui-panels.html">
+									<li class="{% if 'mySites' in segment %} active {% endif %}">
+										<a href="/mySites.html">
 											<span class="sub-item">My Sites</span>
 										</a>
 									</li>
-									<li class="{% if 'ui-notifications' in segment %} active {% endif %}">
-										<a href="/ui-notifications.html">
+									<li class="{% if 'selectedSites' in segment %} active {% endif %}">
+										<a href="/selectedSites.html">
 											<span class="sub-item">Selected Sites</span>
 										</a>
 									</li>
-									<li class="{% if 'ui-sweetalert' in segment %} active {% endif %}">
-										<a href="/ui-sweetalert.html">
+									<li class="{% if 'recentSites' in segment %} active {% endif %}">
+										<a href="/recentSites.html">
 											<span class="sub-item">Recent Sites</span>
 										</a>
 									</li>
-									<li class="{% if 'ui-fontawesome' in segment %} active {% endif %}">
-										<a href="/ui-fontawesome.html">
+									<li class="{% if 'createSite' in segment %} active {% endif %}">
+										<a href="/createSite.html">
 											<span class="sub-item">Create Site</span>
 										</a>
 									</li>
 								</ul>
 							</div>
 						</li>
+
 						<li class="nav-item {% if 'layout' in segment %} active {% endif %}">
 							<a data-toggle="collapse" href="#devicesList">
 								<i class="fas fa-th-list"></i>
@@ -103,6 +104,7 @@
 								</ul>
 							</div>
 						</li>
+
 						<li class="nav-item {% if 'form' in segment %} active {% endif %}">
 							<a data-toggle="collapse" href="#forms">
 								<i class="fas fa-pen-square"></i>
@@ -133,6 +135,7 @@
 								</ul>
 							</div>
 						</li>
+
 						<li class="nav-item {% if 'tables' in segment %} active {% endif %}">
 							<a data-toggle="collapse" href="#tables">
 								<i class="fas fa-table"></i>
@@ -154,6 +157,7 @@
 								</ul>
 							</div>
 						</li>
+
 						<li class="nav-item {% if 'maps' in segment %} active {% endif %}">
 							<a data-toggle="collapse" href="#maps">
 								<i class="fas fa-map-marker-alt"></i>
@@ -170,6 +174,7 @@
 								</ul>
 							</div>
 						</li>
+
 						<li class="nav-item {% if 'charts' in segment %} active {% endif %}">
 							<a data-toggle="collapse" href="#charts">
 								<i class="far fa-chart-bar"></i>
@@ -191,6 +196,7 @@
 								</ul>
 							</div>
 						</li>
+
 						<li class="nav-item {% if 'widgets' in segment %} active {% endif %}">
 							<a href="/widgets.html">
 								<i class="fas fa-desktop"></i>
@@ -198,6 +204,7 @@
 								<span class="badge badge-success">4</span>
 							</a>
 						</li>
+
 						<li class="nav-item">
 							<a data-toggle="collapse" href="#submenu">
 								<i class="fas fa-bars"></i>
@@ -249,6 +256,7 @@
 								</ul>
 							</div>
 						</li>
+
 						<li class="mx-4 mt-2">
                             <a target="_blank"
                                href="http://tmgroup.com.eg/contact-us/" 
