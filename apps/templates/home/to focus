@@ -1,255 +1,106 @@
-<div class="form-group">
-										<div class="input-group mb-3">
-											<div class="input-group-prepend">
-												<span class="input-group-text" id="basic-addon1">@</span>
-											</div>
-											<input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-										</div>
-									</div>
-									<div class="form-group">
-										<div class="input-group mb-3">
-											<input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-											<div class="input-group-append">
-												<span class="input-group-text" id="basic-addon2">@example.com</span>
-											</div>
-										</div>
-									</div>
-									<div class="form-group">
-										<label for="basic-url">Your vanity URL</label>
-										<div class="input-group mb-3">
-											<div class="input-group-prepend">
-												<span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
-											</div>
-											<input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-										</div>
-									</div>
-									<div class="form-group">
-										<div class="input-group mb-3">
-											<div class="input-group-prepend">
-												<span class="input-group-text">$</span>
-											</div>
-											<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-											<div class="input-group-append">
-												<span class="input-group-text">.00</span>
-											</div>
-										</div>
-									</div>
-									<div class="form-group">
-										<div class="input-group">
-											<div class="input-group-prepend">
-												<span class="input-group-text">With textarea</span>
-											</div>
-											<textarea class="form-control" aria-label="With textarea"></textarea>
-										</div>
-									</div>
-									<div class="form-group">
-										<div class="input-group">
-											<div class="input-group-prepend">
-												<button class="btn btn-default btn-border" type="button">Button</button>
-											</div>
-											<input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
-										</div>
-									</div>
-									<div class="form-group">
-										<div class="input-group">
-											<input type="text" class="form-control" aria-label="Text input with dropdown button">
-											<div class="input-group-append">
-												<button class="btn btn-primary btn-border dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
-												<div class="dropdown-menu">
-													<a class="dropdown-item" href="#">Action</a>
-													<a class="dropdown-item" href="#">Another action</a>
-													<a class="dropdown-item" href="#">Something else here</a>
-													<div role="separator" class="dropdown-divider"></div>
-													<a class="dropdown-item" href="#">Separated link</a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="form-group">
-										<div class="input-icon">
-											<input type="text" class="form-control" placeholder="Search for...">
-											<span class="input-icon-addon">
-												<i class="fa fa-search"></i>
-											</span>
-										</div>
-									</div>
-									<div class="form-group">
-										<div class="input-icon">
-											<span class="input-icon-addon">
-												<i class="fa fa-user"></i>
-											</span>
-											<input type="text" class="form-control" placeholder="Username">
-										</div>
-									</div>
-									<div class="form-group">
-										<label class="form-label">Image Check</label>
-										<div class="row">
-											<div class="col-6 col-sm-4">
-												<label class="imagecheck mb-4">
-													<input name="imagecheck" type="checkbox" value="1" class="imagecheck-input">
-													<figure class="imagecheck-figure">
-														<img src="/static/assets/img/examples/product1.jpg" alt="title" class="imagecheck-image">
-													</figure>
-												</label>
-											</div>
-											<div class="col-6 col-sm-4">
-												<label class="imagecheck mb-4">
-													<input name="imagecheck" type="checkbox" value="2" class="imagecheck-input" checked="">
-													<figure class="imagecheck-figure">
-														<img src="/static/assets/img/examples/product4.jpg" alt="title" class="imagecheck-image">
-													</figure>
-												</label>
-											</div>
-											<div class="col-6 col-sm-4">
-												<label class="imagecheck mb-4">
-													<input name="imagecheck" type="checkbox" value="3" class="imagecheck-input">
-													<figure class="imagecheck-figure">
-														<img src="/static/assets/img/examples/product3.jpg" alt="title" class="imagecheck-image">
-													</figure>
-												</label>
-											</div>
-										</div>
-									</div>
-									<div class="form-group">
-										<label class="form-label">Color Input</label>
-										<div class="row gutters-xs">
-											<div class="col-auto">
-												<label class="colorinput">
-													<input name="color" type="checkbox" value="dark" class="colorinput-input">
-													<span class="colorinput-color bg-dark"></span>
-												</label>
-											</div>
-											<div class="col-auto">
-												<label class="colorinput">
-													<input name="color" type="checkbox" value="primary" class="colorinput-input">
-													<span class="colorinput-color bg-primary"></span>
-												</label>
-											</div>
-											<div class="col-auto">
-												<label class="colorinput">
-													<input name="color" type="checkbox" value="secondary" class="colorinput-input">
-													<span class="colorinput-color bg-secondary"></span>
-												</label>
-											</div>
-											<div class="col-auto">
-												<label class="colorinput">
-													<input name="color" type="checkbox" value="info" class="colorinput-input">
-													<span class="colorinput-color bg-info"></span>
-												</label>
-											</div>
-											<div class="col-auto">
-												<label class="colorinput">
-													<input name="color" type="checkbox" value="success" class="colorinput-input">
-													<span class="colorinput-color bg-success"></span>
-												</label>
-											</div>
-											<div class="col-auto">
-												<label class="colorinput">
-													<input name="color" type="checkbox" value="danger" class="colorinput-input">
-													<span class="colorinput-color bg-danger"></span>
-												</label>
-											</div>
-											<div class="col-auto">
-												<label class="colorinput">
-													<input name="color" type="checkbox" value="warning" class="colorinput-input">
-													<span class="colorinput-color bg-warning"></span>
-												</label>
-											</div>
-										</div>
-									</div>
-                                    <div class="form-group">
-										<label class="form-label">Size</label>
-										<div class="selectgroup w-100">
-											<label class="selectgroup-item">
-												<input type="radio" name="value" value="50" class="selectgroup-input" checked="">
-												<span class="selectgroup-button">S</span>
-											</label>
-											<label class="selectgroup-item">
-												<input type="radio" name="value" value="100" class="selectgroup-input">
-												<span class="selectgroup-button">M</span>
-											</label>
-											<label class="selectgroup-item">
-												<input type="radio" name="value" value="150" class="selectgroup-input">
-												<span class="selectgroup-button">L</span>
-											</label>
-											<label class="selectgroup-item">
-												<input type="radio" name="value" value="200" class="selectgroup-input">
-												<span class="selectgroup-button">XL</span>
-											</label>
-										</div>
-									</div>
-									<div class="form-group">
-										<label class="form-label">Icons input</label>
-										<div class="selectgroup w-100">
-											<label class="selectgroup-item">
-												<input type="radio" name="transportation" value="2" class="selectgroup-input">
-												<span class="selectgroup-button selectgroup-button-icon"><i class="icon-screen-smartphone"></i></span>
-											</label>
-											<label class="selectgroup-item">
-												<input type="radio" name="transportation" value="1" class="selectgroup-input" checked="">
-												<span class="selectgroup-button selectgroup-button-icon"><i class="icon-screen-tablet"></i></span>
-											</label>
-											<label class="selectgroup-item">
-												<input type="radio" name="transportation" value="6" class="selectgroup-input">
-												<span class="selectgroup-button selectgroup-button-icon"><i class="icon-screen-desktop"></i></span>
-											</label>
-											<label class="selectgroup-item">
-												<input type="radio" name="transportation" value="6" class="selectgroup-input">
-												<span class="selectgroup-button selectgroup-button-icon"><i class="fa fa-times"></i></span>
-											</label>
-										</div>
-									</div>
-									<div class="form-group">
-										<label class="form-label d-block">Icon input</label>
-										<div class="selectgroup selectgroup-secondary selectgroup-pills">
-											<label class="selectgroup-item">
-												<input type="radio" name="icon-input" value="1" class="selectgroup-input" checked="">
-												<span class="selectgroup-button selectgroup-button-icon"><i class="fa fa-sun"></i></span>
-											</label>
-											<label class="selectgroup-item">
-												<input type="radio" name="icon-input" value="2" class="selectgroup-input">
-												<span class="selectgroup-button selectgroup-button-icon"><i class="fa fa-moon"></i></span>
-											</label>
-											<label class="selectgroup-item">
-												<input type="radio" name="icon-input" value="3" class="selectgroup-input">
-												<span class="selectgroup-button selectgroup-button-icon"><i class="fa fa-tint"></i></span>
-											</label>
-											<label class="selectgroup-item">
-												<input type="radio" name="icon-input" value="4" class="selectgroup-input">
-												<span class="selectgroup-button selectgroup-button-icon"><i class="fa fa-cloud"></i></span>
-											</label>
-										</div>
-									</div>
-									<div class="form-group">
-										<label class="form-label">Your skills</label>
-										<div class="selectgroup selectgroup-pills">
-											<label class="selectgroup-item">
-												<input type="checkbox" name="value" value="HTML" class="selectgroup-input" checked="">
-												<span class="selectgroup-button">HTML</span>
-											</label>
-											<label class="selectgroup-item">
-												<input type="checkbox" name="value" value="CSS" class="selectgroup-input">
-												<span class="selectgroup-button">CSS</span>
-											</label>
-											<label class="selectgroup-item">
-												<input type="checkbox" name="value" value="PHP" class="selectgroup-input">
-												<span class="selectgroup-button">PHP</span>
-											</label>
-											<label class="selectgroup-item">
-												<input type="checkbox" name="value" value="JavaScript" class="selectgroup-input">
-												<span class="selectgroup-button">JavaScript</span>
-											</label>
-											<label class="selectgroup-item">
-												<input type="checkbox" name="value" value="Ruby" class="selectgroup-input">
-												<span class="selectgroup-button">Ruby</span>
-											</label>
-											<label class="selectgroup-item">
-												<input type="checkbox" name="value" value="Ruby" class="selectgroup-input">
-												<span class="selectgroup-button">Ruby</span>
-											</label>
-											<label class="selectgroup-item">
-												<input type="checkbox" name="value" value="C++" class="selectgroup-input">
-												<span class="selectgroup-button">C++</span>
-											</label>
-										</div>
-									</div>
+
+<!-- Pipe Size -->
+<select name="" id="txtPipeSize" class="form-control" style="color:Green;width:200px;">
+	<option value="null">-</option>
+	<option value="79">½" (12mm)</option>
+	<option value="86">¾" (19mm)</option>
+	<option value="80">1" (25mm)</option>
+	<option value="65">10" (250mm)</option>
+	<option value="87">1¼" (32mm)</option>
+	<option value="74">1½" (38mm)</option>
+	<option value="66">12" (300mm)</option>
+	<option value="67">14" (350mm)</option>
+	<option value="60">16" (400mm)</option>
+	<option value="68">18" (450mm)</option>
+	<option value="81">2" (50mm)</option>
+	<option value="69">20" (500mm)</option>
+	<option value="70">24" (600mm)</option>
+	<option value="76">26" (650mm)</option>
+	<option value="71">28" (700mm)</option>
+	<option value="61">3" (75mm)</option>
+	<option value="75">3/8" (10mm)</option>
+	<option value="72">30" (750mm)</option>
+	<option value="88">3½" (90mm)</option>
+	<option value="77">32" (800mm)</option>
+	<option value="73">36" (900mm)</option>
+	<option value="62">4" (100mm)</option>
+	<option value="84">40" (1000mm)</option>
+	<option value="90">4½" (110mm)</option>
+	<option value="78">48" (1200mm)</option>
+	<option value="89">5" (125mm)</option>
+	<option value="82">50" (1250mm)</option>
+	<option value="63">6" (150mm)</option>
+	<option value="83">60" (1500mm)</option>
+	<option value="85">7½" (185mm)</option>
+	<option value="64">8" (200mm)</option>
+</select>
+
+-----------------------
+<!-- Valve Type -->
+<select name="txtValveLidSize" id="txtValveLidSize" class="form-control" style="color:Green;width:110px;">
+	<option value="null">-</option>
+	<option value="79">½" (12mm)</option>
+	<option value="86">¾" (19mm)</option>
+	<option value="80">1" (25mm)</option>
+	<option value="65">10" (250mm)</option>
+	<option value="87">1¼" (32mm)</option>
+	<option value="74">1½" (38mm)</option>
+	<option value="66">12" (300mm)</option>
+	<option value="67">14" (350mm)</option>
+	<option value="60">16" (400mm)</option>
+	<option value="68">18" (450mm)</option>
+	<option value="81">2" (50mm)</option>
+	<option value="69">20" (500mm)</option>
+	<option value="70">24" (600mm)</option>
+	<option value="76">26" (650mm)</option>
+	<option value="71">28" (700mm)</option>
+	<option value="61">3" (75mm)</option>
+	<option value="75">3/8" (10mm)</option>
+	<option value="72">30" (750mm)</option>
+	<option value="88">3½" (90mm)</option>
+	<option value="77">32" (800mm)</option>
+	<option value="73">36" (900mm)</option>
+	<option value="62">4" (100mm)</option>
+	<option value="84">40" (1000mm)</option>
+	<option value="90">4½" (110mm)</option>
+	<option value="78">48" (1200mm)</option>
+	<option value="89">5" (125mm)</option>
+	<option value="82">50" (1250mm)</option>
+	<option value="63">6" (150mm)</option>
+	<option value="83">60" (1500mm)</option>
+	<option value="85">7½" (185mm)</option>
+	<option value="64">8" (200mm)</option>
+</select>
+
+<!-- Pipe Material -->
+
+<select name="ctl00$ContentPlaceHolder1$dropPipeMaterial" id="ContentPlaceHolder1_dropPipeMaterial" class="form-control" style="color:Green;">
+	<option value="null">-</option>
+	<option value="1">Asbestos Cement</option>
+	<option value="2">Cast Iron</option>
+	<option value="4">Concrete</option>
+	<option value="3">Copper</option>
+	<option value="11">Ductile Iron</option>
+	<option value="5">Ductile Iron Concrete Lined</option>
+	<option value="15">Galvanised</option>
+	<option value="6">High Density Polyethylene</option>
+	<option value="14">HPPE</option>
+	<option value="7">Lead</option>
+	<option value="8">Medium Density Polyethylene</option>
+	<option value="13">MOPVC</option>
+	<option value="12">Protector line</option>
+	<option value="9">PVC</option>
+	<option value="10">Steel</option>
+</select>
+
+<!-- Chamber Type -->
+<select name="drChambertype" id="Chambertype" class="form-control" style="color:Green;width:232px;">
+	<option value="-1">Please Select</option>
+	<option value="5">Air Valve (AV)</option>
+	<option value="3">Divisional Valve (DV)</option>
+	<option value="2">Fire Hydrant (FH)</option>
+	<option value="7">Mainline Valve (MV)</option>
+	<option value="1">Sluice Valve (SV)</option>
+	<option value="6">Stop Tap (ST)</option>
+	<option value="4">Washout (WO)</option>
+</select>
