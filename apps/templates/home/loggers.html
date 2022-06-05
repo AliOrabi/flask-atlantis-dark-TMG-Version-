@@ -1,0 +1,455 @@
+{% extends "layouts/base.html" %}
+
+{% block title %}  Devices {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+	<div class="content">
+		<div class="page-inner">
+			<div class="page-header">
+				<h4 class="page-title"> Devices </h4>
+				<ul class="breadcrumbs">
+					<li class="nav-home">
+						<a href="index.html">
+							<i class="flaticon-home"></i>
+						</a>
+					</li>
+					<li class="separator">
+						<i class="flaticon-right-arrow"></i>
+					</li>
+					<li class="nav-item">
+						<a href="#">devices</a>
+					</li>
+				</ul>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="card">
+                        <div class="card-head">
+                            <div class="col-md-12">
+                                <div class="form-group form-inline">
+                                    <label class="col-form-label" for="">Filter By Serial/SMS:</label>
+                                    <div class="form-group">
+                                        <div class="col-sm">
+                                            <input type="text" class="form-control" id="" placeholder="">
+                                        </div>
+                                        <div class="col-sm">
+                                            <select name="drTypeofLogger" id="ContentdrTypeofLogger" class="form-control">
+                                                <option selected="selected" value="0">Show all Devices</option>
+                                                <option value="1">Show all Devices not assigned to an Site</option>
+                                                <option value="2">Show all Devices not assigned to an Owner</option>
+                                                <option value="3">Show all Devices not assigned to an Owner and Site</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="btn btn-primary" value="multi-filter-select">Filter</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+						<div class="card-body">
+							<div class="table-responsive">
+								<table id="multi-filter-select" class="display table table-striped table-hover">
+									<thead style="color: white; background-color:blue";>
+										<tr>
+											<th>SMS Number</th>
+											<th>Owner</th>
+											<th>Device Type</th>
+											<th>Last Call In</th>
+											<th>Serial</th>
+											<th>Network</th>
+											<th>Notes</th>
+											<th>View</th>
+                                            <th>Edit</th>
+										</tr>
+									</thead>
+                                    <tfoot>
+										<tr>
+											<th>SMS Number</th>
+											<th>Owner</th>
+											<th>Device Type</th>
+											<th>Last Call In</th>
+											<th>Serial</th>
+											<th>Network</th>
+										</tr>
+									</tfoot>
+									<tbody>
+										<tr>
+											<th>FYM_1</th>
+											<td>Multilog2 5.02</td>
+											<td>S.M Admin</td>
+											<td>00201000254206</td>
+											<td>000061</td>
+											<td>TAMIAH STATION محطة طامية</td>
+                                            <td></td>
+											<th><a href="/LoggersDetail.html">View</a></th>
+                                            <th><a href="/createEditLogger.html">Edit</a></th>
+										</tr>
+										<tr>
+											<th>FYM_2</th>
+											<td>Multilog2 5.08</td>
+											<td>S.M Admin</td>
+											<td>00201000254206</td>
+											<td>000062</td>
+											<td>TAMIAH STATION محطة طامية</td>
+                                            <td></td>
+											<th><a href="/LoggersDetail.html">View</a></th>
+                                            <th><a href="/createEditLogger.html">Edit</a></th>
+										</tr>
+										<tr>
+											<th>FYM_3</th>
+											<td>Multilog2 2.05</td>
+											<td>S.M Admin</td>
+											<td>00201000254201</td>
+											<td>000063</td>
+											<td>TAMIAH STATION</td>
+                                            <td></td>
+											<th><a href="/LoggersDetail.html">View</a></th>
+                                            <th><a href="/createEditLogger.html">Edit</a></th>
+										</tr>
+                                        <tr>
+											<th>FYM_1</th>
+											<td>Multilog2 5.02</td>
+											<td>S.M Admin</td>
+											<td>00201000254206</td>
+											<td>000061</td>
+											<td>TAMIAH STATION محطة طامية</td>
+                                            <td></td>
+											<th><a href="/LoggersDetail.html">View</a></th>
+                                            <th><a href="/createEditLogger.html">Edit</a></th>
+										</tr>
+										<tr>
+											<th>FYM_2</th>
+											<td>Multilog2 5.08</td>
+											<td>S.M Admin</td>
+											<td>00201000254206</td>
+											<td>000062</td>
+											<td>TAMIAH STATION محطة طامية</td>
+                                            <td></td>
+											<th><a href="/LoggersDetail.html">View</a></th>
+                                            <th><a href="/createEditLogger.html">Edit</a></th>
+										</tr>
+										<tr>
+											<th>FYM_3</th>
+											<td>Multilog2 2.05</td>
+											<td>S.M Admin</td>
+											<td>00201000254201</td>
+											<td>000063</td>
+											<td>TAMIAH STATION</td>
+                                            <td></td>
+											<th><a href="/LoggersDetail.html">View</a></th>
+                                            <th><a href="/createEditLogger.html">Edit</a></th>
+										</tr>
+                                        <tr>
+											<th>FYM_1</th>
+											<td>Multilog2 5.02</td>
+											<td>S.M Admin</td>
+											<td>00201000254206</td>
+											<td>000061</td>
+											<td>TAMIAH STATION محطة طامية</td>
+                                            <td></td>
+											<th><a href="/LoggersDetail.html">View</a></th>
+                                            <th><a href="/createEditLogger.html">Edit</a></th>
+										</tr>
+										<tr>
+											<th>FYM_2</th>
+											<td>Multilog2 5.08</td>
+											<td>S.M Admin</td>
+											<td>00201000254206</td>
+											<td>000062</td>
+											<td>TAMIAH STATION محطة طامية</td>
+                                            <td></td>
+											<th><a href="/LoggersDetail.html">View</a></th>
+                                            <th><a href="/createEditLogger.html">Edit</a></th>
+										</tr>
+										<tr>
+											<th>FYM_3</th>
+											<td>Multilog2 2.05</td>
+											<td>S.M Admin</td>
+											<td>00201000254201</td>
+											<td>000063</td>
+											<td>TAMIAH STATION</td>
+                                            <td></td>
+											<th><a href="/LoggersDetail.html">View</a></th>
+                                            <th><a href="/createEditLogger.html">Edit</a></th>
+										</tr>
+                                        <tr>
+											<th>FYM_1</th>
+											<td>Multilog2 5.02</td>
+											<td>S.M Admin</td>
+											<td>00201000254206</td>
+											<td>000061</td>
+											<td>TAMIAH STATION محطة طامية</td>
+                                            <td></td>
+											<th><a href="/LoggersDetail.html">View</a></th>
+                                            <th><a href="/createEditLogger.html">Edit</a></th>
+										</tr>
+										<tr>
+											<th>FYM_2</th>
+											<td>Multilog2 5.08</td>
+											<td>S.M Admin</td>
+											<td>00201000254206</td>
+											<td>000062</td>
+											<td>TAMIAH STATION محطة طامية</td>
+                                            <td></td>
+											<th><a href="/LoggersDetail.html">View</a></th>
+                                            <th><a href="/createEditLogger.html">Edit</a></th>
+										</tr>
+										<tr>
+											<th>FYM_3</th>
+											<td>Multilog2 2.05</td>
+											<td>S.M Admin</td>
+											<td>00201000254201</td>
+											<td>000063</td>
+											<td>TAMIAH STATION</td>
+                                            <td></td>
+											<th><a href="/LoggersDetail.html">View</a></th>
+                                            <th><a href="/createEditLogger.html">Edit</a></th>
+										</tr>
+                                        <tr>
+											<th>FYM_1</th>
+											<td>Multilog2 5.02</td>
+											<td>S.M Admin</td>
+											<td>00201000254206</td>
+											<td>000061</td>
+											<td>TAMIAH STATION محطة طامية</td>
+                                            <td></td>
+											<th><a href="/LoggersDetail.html">View</a></th>
+                                            <th><a href="/createEditLogger.html">Edit</a></th>
+										</tr>
+										<tr>
+											<th>FYM_2</th>
+											<td>Multilog2 5.08</td>
+											<td>S.M Admin</td>
+											<td>00201000254206</td>
+											<td>000062</td>
+											<td>TAMIAH STATION محطة طامية</td>
+                                            <td></td>
+											<th><a href="/LoggersDetail.html">View</a></th>
+                                            <th><a href="/createEditLogger.html">Edit</a></th>
+										</tr>
+										<tr>
+											<th>FYM_3</th>
+											<td>Multilog2 2.05</td>
+											<td>S.M Admin</td>
+											<td>00201000254201</td>
+											<td>000063</td>
+											<td>TAMIAH STATION</td>
+                                            <td></td>
+											<th><a href="/LoggersDetail.html">View</a></th>
+                                            <th><a href="/createEditLogger.html">Edit</a></th>
+										</tr>
+                                        <tr>
+											<th>FYM_1</th>
+											<td>Multilog2 5.02</td>
+											<td>S.M Admin</td>
+											<td>00201000254206</td>
+											<td>000061</td>
+											<td>TAMIAH STATION محطة طامية</td>
+                                            <td></td>
+											<th><a href="/LoggersDetail.html">View</a></th>
+                                            <th><a href="/createEditLogger.html">Edit</a></th>
+										</tr>
+										<tr>
+											<th>FYM_2</th>
+											<td>Multilog2 5.08</td>
+											<td>S.M Admin</td>
+											<td>00201000254206</td>
+											<td>000062</td>
+											<td>TAMIAH STATION محطة طامية</td>
+                                            <td></td>
+											<th><a href="/LoggersDetail.html">View</a></th>
+                                            <th><a href="/createEditLogger.html">Edit</a></th>
+										</tr>
+										<tr>
+											<th>FYM_3</th>
+											<td>Multilog2 2.05</td>
+											<td>S.M Admin</td>
+											<td>00201000254201</td>
+											<td>000063</td>
+											<td>TAMIAH STATION</td>
+                                            <td></td>
+											<th><a href="/LoggersDetail.html">View</a></th>
+                                            <th><a href="/createEditLogger.html">Edit</a></th>
+										</tr>
+                                        <tr>
+											<th>FYM_1</th>
+											<td>Multilog2 5.02</td>
+											<td>S.M Admin</td>
+											<td>00201000254206</td>
+											<td>000061</td>
+											<td>TAMIAH STATION محطة طامية</td>
+                                            <td></td>
+											<th><a href="/LoggersDetail.html">View</a></th>
+                                            <th><a href="/createEditLogger.html">Edit</a></th>
+										</tr>
+										<tr>
+											<th>FYM_2</th>
+											<td>Multilog2 5.08</td>
+											<td>S.M Admin</td>
+											<td>00201000254206</td>
+											<td>000062</td>
+											<td>TAMIAH STATION محطة طامية</td>
+                                            <td></td>
+											<th><a href="/LoggersDetail.html">View</a></th>
+                                            <th><a href="/createEditLogger.html">Edit</a></th>
+										</tr>
+										<tr>
+											<th>FYM_3</th>
+											<td>Multilog2 2.05</td>
+											<td>S.M Admin</td>
+											<td>00201000254201</td>
+											<td>000063</td>
+											<td>TAMIAH STATION</td>
+                                            <td></td>
+											<th><a href="/LoggersDetail.html">View</a></th>
+                                            <th><a href="/createEditLogger.html">Edit</a></th>
+										</tr>
+                                        <tr>
+											<th>FYM_1</th>
+											<td>Multilog2 5.02</td>
+											<td>S.M Admin</td>
+											<td>00201000254206</td>
+											<td>000061</td>
+											<td>TAMIAH STATION محطة طامية</td>
+                                            <td></td>
+											<th><a href="/LoggersDetail.html">View</a></th>
+                                            <th><a href="/createEditLogger.html">Edit</a></th>
+										</tr>
+										<tr>
+											<th>FYM_2</th>
+											<td>Multilog2 5.08</td>
+											<td>S.M Admin</td>
+											<td>00201000254206</td>
+											<td>000062</td>
+											<td>TAMIAH STATION محطة طامية</td>
+                                            <td></td>
+											<th><a href="/LoggersDetail.html">View</a></th>
+                                            <th><a href="/createEditLogger.html">Edit</a></th>
+										</tr>
+										<tr>
+											<th>FYM_3</th>
+											<td>Multilog2 2.05</td>
+											<td>S.M Admin</td>
+											<td>00201000254201</td>
+											<td>000063</td>
+											<td>TAMIAH STATION</td>
+                                            <td></td>
+											<th><a href="/LoggersDetail.html">View</a></th>
+                                            <th><a href="/createEditLogger.html">Edit</a></th>
+										</tr>
+                                        <tr>
+											<th>FYM_1</th>
+											<td>Multilog2 5.02</td>
+											<td>S.M Admin</td>
+											<td>00201000254206</td>
+											<td>000061</td>
+											<td>TAMIAH STATION محطة طامية</td>
+                                            <td></td>
+											<th><a href="/LoggersDetail.html">View</a></th>
+                                            <th><a href="/createEditLogger.html">Edit</a></th>
+										</tr>
+										<tr>
+											<th>FYM_2</th>
+											<td>Multilog2 5.08</td>
+											<td>S.M Admin</td>
+											<td>00201000254206</td>
+											<td>000062</td>
+											<td>TAMIAH STATION محطة طامية</td>
+                                            <td></td>
+											<th><a href="/LoggersDetail.html">View</a></th>
+                                            <th><a href="/createEditLogger.html">Edit</a></th>
+										</tr>
+										<tr>
+											<th>FYM_3</th>
+											<td>Multilog2 2.05</td>
+											<td>S.M Admin</td>
+											<td>00201000254201</td>
+											<td>000063</td>
+											<td>TAMIAH STATION</td>
+                                            <td></td>
+											<th><a href="/LoggersDetail.html">View</a></th>
+                                            <th><a href="/createEditLogger.html">Edit</a></th>
+										</tr>
+                                        <tr>
+											<th>FYM_1</th>
+											<td>Multilog2 5.02</td>
+											<td>S.M Admin</td>
+											<td>00201000254206</td>
+											<td>000061</td>
+											<td>TAMIAH STATION محطة طامية</td>
+                                            <td></td>
+											<th><a href="/LoggersDetail.html">View</a></th>
+                                            <th><a href="/createEditLogger.html">Edit</a></th>
+										</tr>
+										<tr>
+											<th>FYM_2</th>
+											<td>Multilog2 5.08</td>
+											<td>S.M Admin</td>
+											<td>00201000254206</td>
+											<td>000062</td>
+											<td>محطة رشاد</td>
+                                            <td></td>
+											<th><a href="/LoggersDetail.html">View</a></th>
+                                            <th><a href="/createEditLogger.html">Edit</a></th>
+										</tr>
+										<tr>
+											<th>FYM_3</th>
+											<td>Multilog2 2.05</td>
+											<td>S.M Admin</td>
+											<td>00201000254201</td>
+											<td>000063</td>
+											<td>TAMIAH STATION</td>
+                                            <td></td>
+											<th><a href="/LoggersDetail.html">View</a></th>
+                                            <th><a href="/createEditLogger.html">Edit</a></th>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+	<!-- Atlantis DEMO methods, don't include it in your project! -->
+	<script src="/static/assets/js/setting-demo2.js"></script>
+	<script >
+		$(document).ready(function() {
+			$('#basic-datatables').DataTable({
+			});
+
+			$('#multi-filter-select').DataTable( {
+				"pageLength": 10,
+				initComplete: function () {
+					this.api().columns().every( function () {
+						var column = this;
+						var select = $('<select class="form-control"><option value=""></option></select>')
+						.appendTo( $(column.footer()).empty() )
+						.on( 'change', function () {
+							var val = $.fn.dataTable.util.escapeRegex(
+								$(this).val()
+								);
+
+							column
+							.search( val ? '^'+val+'$' : '', true, false )
+							.draw();
+						} );
+
+						column.data().unique().sort().each( function ( d, j ) {
+							select.append( '<option value="'+d+'">'+d+'</option>' )
+						} );
+					} );
+				}
+			});
+		});
+	</script>
+{% endblock javascripts %}
