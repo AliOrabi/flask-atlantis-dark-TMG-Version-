@@ -10,33 +10,211 @@
 
 {% block content %}
 
-<div class="content">
-    <div class="page-inner">
-        <div class="page-header">
-            <h4 class="page-title"> Device Details</h4>
-            <ul class="breadcrumbs">
-                <li class="nav-home">
-                    <a href="index.html">
-                        <i class="flaticon-home"></i>
-                    </a>
-                </li>
-                <li class="separator">
-                    <i class="flaticon-right-arrow"></i>
-                </li>
-                <li class="nav-item">
-                    <a href="loggers.html">Devices</a>
-                </li>
-                <li class="separator">
-                    <i class="flaticon-right-arrow"></i>
-                </li>
-                <li class="nav-item">
-                    <a href="#"> Device Details </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-
+	<div class="content">
+		<div class="page-inner">
+			<div class="page-header">
+				<h4 class="page-title"> Device Details</h4>
+				<ul class="breadcrumbs">
+					<li class="nav-home">
+						<a href="index.html">
+							<i class="flaticon-home"></i>
+						</a>
+					</li>
+					<li class="separator">
+						<i class="flaticon-right-arrow"></i>
+					</li>
+					<li class="nav-item">
+						<a href="loggers.html">Devices</a>
+					</li>
+					<li class="separator">
+						<i class="flaticon-right-arrow"></i>
+					</li>
+					<li class="nav-item">
+						<a href="#"> Device Details </a>
+					</li>
+				</ul>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+					<p style="text-align: left;"> SMS Number: 
+						<span style="color:#0099FF;"> 201033579797</span>
+					</p>
+					<p style="text-align: left;"> Serial Number: 
+						<span style="color:#0099FF;">  06299 </span>
+					</p>
+					<p style="text-align: left;">  Owner:
+						<span style="color:#0099FF;">  DataGate Admin</span>
+					</p>
+					<p style="text-align: left;">  Create Date: 
+						<span style="color:#0099FF;"> </span>
+					</p>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+					<p style="text-align: left;">  Device Type:
+						<span style="color:#0099FF;">  FW-138-006U 5.02</span>
+					</p>
+					<p style="text-align: left;">  Network: 
+						<span style="color:#0099FF;">  Vodafone EG  </span>
+					</p>
+					<p style="text-align: left;">   Battery Level:
+						<span style="color:#0099FF;">   6.6V </span>
+					</p>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+					<p style="text-align: left;">  Signal Level: 
+						<span style="color:#0099FF;">  24</span>
+					</p>
+					<p style="text-align: left;">  Last Call In:  
+						<span style="color:#0099FF;">   05-Jun-2022 02:30 [24h] </span>
+					</p>
+					<p style="text-align: left;">   Last Restart:
+						<span style="color:#0099FF;">   N/A </span>
+					</p>
+				</div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<p style="text-align: left;">  Notes:  
+						<span style="color:#0099FF;">  </span>
+					</p>
+				</div>
+				<!---->
+				<div class="col-md-12">
+					<div class="card-body">
+						<ul class="nav nav-pills nav-secondary" id="pills-tab" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Messages</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Text</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Commands</a>
+							</li>
+						</ul>
+						<div class="tab-content mt-2 mb-3" id="pills-tabContent" >
+							<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+								<div class="form-group form-inline" style="background-color:#FEF0C9;">
+									<div class="form-group">
+										<label for="msmTimestamp" class="col col-form-label">Data Messages for Device:</label>
+										<select class="form-control form-control col" id="msmTimestamp">
+											<option selected="selected" value="1">Last 24 Hours</option>
+											<option value="7">Last 7 Days</option>
+											<option value="28">Last Month</option>
+											<option value="91">Last 3 Months</option>
+										</select>
+										<select class="form-control form-control" id="smsfilter">
+											<option selected="selected" value="DATA">All Messages</option>
+											<option value="ID">Config Messages</option>
+											<option value="FTP2">Data Messages</option>
+										</select>
+									</div>
+									<div class="calendar-group">
+										<input type="submit" name="ShowCalendarStartButton" value="Set Start Date" id="ContentPlaceHolder1_ShowCalendarStartButton" class="btnStandard2 topSpace">
+										<input name="tbUniqueDateSearchStart" type="date" readonly="readonly" id="ContentPlaceHolder1_tbUniqueDateSearchStart">
+										<input type="submit" name="ShowCalendarStartButton" value="Set End Date" id="ContentPlaceHolder1_ShowCalendarStartButton" class="btnStandard2 topSpace">
+										<input name="tbUniqueDateSearchStart" type="date" readonly="readonly" id="ContentPlaceHolder1_tbUniqueDateSearchStart">
+									</div>
+								</div>
+								<div>
+									<div class="table-responsive">
+										<table id="multi-filter-select" class="display table table-striped table-hover">
+											<thead style="color: white; background-color:blue";>
+												<tr>
+													<th>ID</th>
+													<th>RX Time</th>
+													<th>Battary</th>
+													<th>CSQ</th>
+													<th>Type</th>
+													<th>Message (Click to decode)</th>
+												</tr>
+											</thead>
+											
+											<tbody>
+												<tr>
+													<th>109180</th>
+													<td>05-Jun-2022 02:30:32</td>
+													<td>6.6V</td>
+													<td>24</td>
+													<td>UDP</td>
+													<td>UDP Config[72],FW-138-006 5.02,Serial: 6299,Net ID: 60202,LAC:23302,Cell ID: 46000,Last Call Status: 255,CEERCode: 2,Rec 0x0B/6</td>
+												</tr>
+												<tr>
+													<th>109179</th>
+													<td>05-Jun-2022 02:30:32</td>
+													<td>6.6V</td>
+													<td>24</td>
+													<td>UDP</td>
+													<td>UDP Config[72],FW-138-006 5.02,Serial: 6299,Net ID: 60202,LAC:23302,Cell ID: 46000,Last Call Status: 255,CEERCode: 2,Rec 0x0B/6</td>
+												</tr>
+												<tr>
+													<th>109178</th>
+													<td>05-Jun-2022 02:30:32</td>
+													<td>6.6V</td>
+													<td>24</td>
+													<td>UDP</td>
+													<td>UDP Config[72],FW-138-006 5.02,Serial: 6299,Net ID: 60202,LAC:23302,Cell ID: 46000,Last Call Status: 255,CEERCode: 2,Rec 0x0B/6</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="tabFooter">
+									<span>3 Messages Returned</span>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+								<div class="form-group form-inline" style="background-color:#FEF0C9;">
+									<div class="form-group">
+										<label for="msmTimestamp" class="col col-form-label">Data Messages for Device:</label>
+										<select class="form-control form-control col" id="msmTimestamp">
+											<option selected="selected" value="1">Last 24 Hours</option>
+											<option value="7">Last 7 Days</option>
+											<option value="28">Last Month</option>
+											<option value="91">Last 3 Months</option>
+										</select>
+									</div>
+								</div>
+								<div class="tabFooter">
+									<span>0 Messages Returned</span>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+								<div class="form-group form-inline" style="background-color:#FEF0C9;">
+									<div class="form-group">
+										<input class="form-control form-control" type="checkbox" id="msmTimestamp"/>
+										<label for="msmTimestamp" class="col col-form-label">Decode Commands</label>
+									</div>
+								</div>
+								<div class="table-responsive">
+									<table id="multi-filter-select" class="display table table-striped table-hover">
+										<thead style="color: white; background-color:blue";>
+											<tr>
+												<th>Name</th>
+												<th>Command Status Date</th>
+												<th>Details</th>
+												<th>Status</th>
+											</tr>
+										</thead>
+										
+										<tbody>
+											<tr>
+												<th>201033579797-220422003037.txt</th>
+												<td>22-Apr-2022 02:30</td>
+												<td>Mem Write 0x0043f81a: 8 Bytes [00 40 9c 45 00 00 00 00]</td>
+												<td>Accepted</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>		
+		
+		</div>
+	</div>
+	
 
 {% endblock content %}
 
@@ -44,34 +222,5 @@
 {% block javascripts %}
 	<!-- Atlantis DEMO methods, don't include it in your project! -->
 	<script src="/static/assets/js/setting-demo2.js"></script>
-	<script >
-		$(document).ready(function() {
-			$('#basic-datatables').DataTable({
-			});
-
-			$('#multi-filter-select').DataTable( {
-				"pageLength": 10,
-				initComplete: function () {
-					this.api().columns().every( function () {
-						var column = this;
-						var select = $('<select class="form-control"><option value=""></option></select>')
-						.appendTo( $(column.footer()).empty() )
-						.on( 'change', function () {
-							var val = $.fn.dataTable.util.escapeRegex(
-								$(this).val()
-								);
-
-							column
-							.search( val ? '^'+val+'$' : '', true, false )
-							.draw();
-						} );
-
-						column.data().unique().sort().each( function ( d, j ) {
-							select.append( '<option value="'+d+'">'+d+'</option>' )
-						} );
-					} );
-				}
-			});
-		});
-	</script>
+	
 {% endblock javascripts %}
