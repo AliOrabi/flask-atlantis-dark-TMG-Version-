@@ -37,13 +37,10 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="card">
-							<div class="card-header">
-								<div class="card-title">Create New Site</div>
-							</div>
 							<div class="card-body">
 								<div class="row">
-									<div class="col-md-6">
-										<div class="form-group">
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="form-group" style="align-content: left;">
 											<div class="form-group form-inline">
 												<label for="inlineinput" class="col-md-3 col-form-label"> SMS Number: </label>
 												<div class="col-md-6">
@@ -62,37 +59,36 @@
 													<input type="number" class="form-control input-full" id="inlineinput" placeholder="">
 												</div>
 											</div>
-										</div>
-										<div class="form-group form-inline">
-											<label for="inlineinput" class="col-md-3 col-form-label"> Customer Serial Number </label>
-											<div class="col-md-6">
-												<input type="number" class="form-control input-full" id="inlineinput" placeholder="">
+											<div class="form-group form-inline">
+												<label for="inlineinput" class="col-md-3 col-form-label"> Customer Serial Number </label>
+												<div class="col-md-6">
+													<input type="number" class="form-control input-full" id="inlineinput" placeholder="">
+												</div>
 											</div>
-										</div>
-										
-										<div class="form-group form-inline">
-											<label for="inlineinput" class="col-md-3 col-form-label">Device Owner:</label>
-											<div class="col-sm-8">
-												<div class="btn-group bootstrap-select form-control bootstrapFilter">
-													<input type="text" role="textbox" aria-label="Search" class="form-control" id="accountSearchFilter" placeholder="">
-													<div class="form-group" id="includeInactiveDMAs">
-														<label for="">
-															<input type="checkbox">Include Inactive DMAs
-														</label>
-													</div>
-													<div class="form-group" id="">
-														<label for="">
-															<input type="checkbox">Include Archived DMAs
-														</label>
+
+											<div class="form-group form-inline">
+												<label for="inlineinput" class="col-md-3 col-form-label">Number Device Owner:</label>
+												<div class="col-sm-8">
+													<div class="btn-group bootstrap-select form-control bootstrapFilter">
+														<input type="text" role="textbox" aria-label="Search" class="form-control" id="accountSearchFilter" placeholder="">
+														<div class="form-group" id="includeInactiveDMAs">
+															<label for="">
+																<input type="checkbox">Include Inactive DMAs
+															</label>
+														</div>
+														<div class="form-group" id="">
+															<label for="">
+																<input type="checkbox">Include Archived DMAs
+															</label>
+														</div>
 													</div>
 												</div>
 											</div>
+
 										</div>
-										
 										<div class="form-group">
-											<label for="inlineinput" class="col-md-3 col-form-label">(Quiet) Days:</label>
+											<label for="inlineinput" class="col-md-3 col-form-label"> Service Description </label>
 											<input type="text" class="form-control col-sm-6" id="inlineinput" placeholder="">
-											
 										</div>
 										
 										<div class="form-group form-inline">
@@ -101,173 +97,58 @@
 												<textarea class="form-control" id="comment" rows="5" cols="70"></textarea>
 											</div>
 										</div>
-										
 									</div>
 									
-									<div class="col-md-6">
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 										<div class="form-group form-inline">
-											<label for="inlineinput" class="col-form-label">Date Created:</label>
-										</div>
-										<div class="form-group form-inline">
-											<label for="inlineinput" class="col-form-label">Start Date:</label>
+											<label for="inlineinput" class="col-form-label"> Previous Battery Replacement Date </label>
 											<div class="col-md-6">
 												<div class="form-control-static">
-													<input type="datetime" class="form-control" id="inlineinput" placeholder="">
+													<input type="text" class="form-control form-control hasDatepicker" id="inlineinput" placeholder="">
 												</div>
 											</div>
 										</div>
 										<div class="form-group form-inline">
-											<label for="inlineinput" class="col-form-label"> End Date: </label>
-											<div class="col-md-6">
-												<div class="form-control-static">
-													<input type="datetime" class="form-control" id="inlineinput" placeholder="">
-												</div>
-											</div>
-										</div>
-										<!---->
-										<div class="form-group form-inline">
-											<label class="col-form-label">
-												Latitude/Longitude: 
-											</label>
-											<div class="form-group">
-												<div class="col-sm">
-													<input type="text" class="form-control" id="" placeholder="">
-												</div>
-												<div class="col-sm">
-													<input type="text" class="form-control" id="" placeholder="">
-												</div>
-												<button type="button" class="btn btn-primary" value="lookup">Locate..</button>
-											</div>
-										</div>
-										<div class="form-group form-inline">
-											<label for="inlineinput" class="col-form-label">Height AOD:</label>
+											<label for="inlineinput" class="col-form-label"> Next Battery Replacement Date </label>
 											<div class="col-md-6">
 												<div class="form-control-static">
 													<input type="text" class="form-control" id="inlineinput" placeholder="">
 												</div>
 											</div>
 										</div>
-										<div class="col form-group form-inline">
-											<label class="col-form-label" for="defaultSelect">Pipe Size: </label>
+										<div class="form-group form-inline">
+											<label for="inlineinput" class="col-form-label"> Service Date </label>
 											<div class="col-md-6">
-												<select name="" id="txtPipeSize" class="form-control" style="color:Green;width:200px;">
-													<option value="null">-</option>
-													<option value="79">½" (12mm)</option>
-													<option value="86">¾" (19mm)</option>
-													<option value="80">1" (25mm)</option>
-													<option value="65">10" (250mm)</option>
-													<option value="87">1¼" (32mm)</option>
-													<option value="74">1½" (38mm)</option>
-													<option value="66">12" (300mm)</option>
-													<option value="67">14" (350mm)</option>
-													<option value="60">16" (400mm)</option>
-													<option value="68">18" (450mm)</option>
-													<option value="81">2" (50mm)</option>
-													<option value="69">20" (500mm)</option>
-													<option value="70">24" (600mm)</option>
-													<option value="76">26" (650mm)</option>
-													<option value="71">28" (700mm)</option>
-													<option value="61">3" (75mm)</option>
-													<option value="75">3/8" (10mm)</option>
-													<option value="72">30" (750mm)</option>
-													<option value="88">3½" (90mm)</option>
-													<option value="77">32" (800mm)</option>
-													<option value="73">36" (900mm)</option>
-													<option value="62">4" (100mm)</option>
-													<option value="84">40" (1000mm)</option>
-													<option value="90">4½" (110mm)</option>
-													<option value="78">48" (1200mm)</option>
-													<option value="89">5" (125mm)</option>
-													<option value="82">50" (1250mm)</option>
-													<option value="63">6" (150mm)</option>
-													<option value="83">60" (1500mm)</option>
-													<option value="85">7½" (185mm)</option>
-													<option value="64">8" (200mm)</option>
-												</select>
+												<div class="form-control-static">
+													<input type="text" class="form-control" id="inlineinput" placeholder="">
+												</div>
 											</div>
-										</div>
-	
-										<div class="col form-group form-inline">
-											<label class="col-form-label" for="defaultSelect">  Valve Type  </label>
-											<div class="col-md-8 form-inline">
-												<select name="txtValveLidSize" id="txtValveLidSize" class="form-control" style="color:Green;width:110px;">
-														<option value="null">-</option>
-														<option value="79">½" (12mm)</option>
-														<option value="86">¾" (19mm)</option>
-														<option value="80">1" (25mm)</option>
-														<option value="65">10" (250mm)</option>
-														<option value="87">1¼" (32mm)</option>
-														<option value="74">1½" (38mm)</option>
-														<option value="66">12" (300mm)</option>
-														<option value="67">14" (350mm)</option>
-														<option value="60">16" (400mm)</option>
-														<option value="68">18" (450mm)</option>
-														<option value="81">2" (50mm)</option>
-														<option value="69">20" (500mm)</option>
-														<option value="70">24" (600mm)</option>
-														<option value="76">26" (650mm)</option>
-														<option value="71">28" (700mm)</option>
-														<option value="61">3" (75mm)</option>
-														<option value="75">3/8" (10mm)</option>
-														<option value="72">30" (750mm)</option>
-														<option value="88">3½" (90mm)</option>
-														<option value="77">32" (800mm)</option>
-														<option value="73">36" (900mm)</option>
-														<option value="62">4" (100mm)</option>
-														<option value="84">40" (1000mm)</option>
-														<option value="90">4½" (110mm)</option>
-														<option value="78">48" (1200mm)</option>
-														<option value="89">5" (125mm)</option>
-														<option value="82">50" (1250mm)</option>
-														<option value="63">6" (150mm)</option>
-														<option value="83">60" (1500mm)</option>
-														<option value="85">7½" (185mm)</option>
-														<option value="64">8" (200mm)</option>
-												</select>
-												<input type="checkbox" class="form-checkbox">
-												<label class="col-form-label" for="defaultSelect">  Valve Lid Modified  </label>
-											</div>
-										</div>
-	
-										<div class="col form-group form-inline">
-											<label class="col-form-label" for="defaultSelect"> Pipe Material: </label>
+										</div>  
+										<div class="form-group form-inline">
+											<label for="inlineinput" class="col-form-label"> Warranty Expiration Date </label>
 											<div class="col-md-6">
-												<select name="txtPipeMaterial" id="txtPipeMaterial" class="form-control" style="color:Green;width:200px;">
-													<option value="null">-</option>
-													<option value="1">Asbestos Cement</option>
-													<option value="2">Cast Iron</option>
-													<option value="4">Concrete</option>
-													<option value="3">Copper</option>
-													<option value="11">Ductile Iron</option>
-													<option value="5">Ductile Iron Concrete Lined</option>
-													<option value="15">Galvanised</option>
-													<option value="6">High Density Polyethylene</option>
-													<option value="14">HPPE</option>
-													<option value="7">Lead</option>
-													<option value="8">Medium Density Polyethylene</option>
-													<option value="13">MOPVC</option>
-													<option value="12">Protector line</option>
-													<option value="9">PVC</option>
-													<option value="10">Steel</option>
-												</select>
+												<div class="form-control-static">
+													<input type="text" class="form-control" id="inlineinput" placeholder="">
+												</div>
 											</div>
 										</div>
-										
-										<div class="col form-group form-inline">
-											<label class="col-form-label" for="defaultSelect"> Chamber Type: </label>
+										<div class="form-group form-inline">
+											<label for="inlineinput" class="col-form-label"> Sim Expiry Date </label>
 											<div class="col-md-6">
-												<select name="drChambertype" id="Chambertype" class="form-control" style="color:Green;width:232px;">
-													<option value="-1">Please Select</option>
-													<option value="5">Air Valve (AV)</option>
-													<option value="3">Divisional Valve (DV)</option>
-													<option value="2">Fire Hydrant (FH)</option>
-													<option value="7">Mainline Valve (MV)</option>
-													<option value="1">Sluice Valve (SV)</option>
-													<option value="6">Stop Tap (ST)</option>
-													<option value="4">Washout (WO)</option>
-												</select>
+												<div class="form-control-static">
+													<input type="text" class="form-control" id="inlineinput" placeholder="">
+												</div>
 											</div>
 										</div>
+										<div class="form-group form-inline">
+											<label for="inlineinput" class="col-form-label"> Equipment Service Cost </label>
+											<div class="col-md-6">
+												<div class="form-control-static">
+													<input type="text" class="form-control" id="inlineinput" placeholder="">
+												</div>
+											</div>
+										</div>
+										<!---->
 									</div>
 								</div>
 							</div>

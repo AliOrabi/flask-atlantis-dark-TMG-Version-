@@ -77,110 +77,36 @@
 									<button class="btn btn-icon btn-link btn-primary btn-xs"><span class="fa fa-times"></span></button>
 								</div>
 							</div>
-							<p class="card-category">
-							Map of the distribution of Sites around Egypt</p>
+							<div class="card-title fw-mediumbold">Main Cities</div>
 						</div>
 						<div class="card-body">
 							<div class="row">
-								<div class="col-sm-4">
+								<div class="col-md-12">{{cmap|safe}}</div>
+								<div class="col-md-12">
 									<div class="card">
 										<div class="card-body">
-											<div class="card-title fw-mediumbold">Main Cities</div>
-											<div class="card-list">
-												<div class="list-group">
-													<a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-													  <div class="d-flex w-100 justify-content-between">
-														<h5 class="mb-1">Cairo</h5>
-														<small>15 Points</small>
-													  </div>
-													  
-													</a>
-													<a href="#" class="list-group-item list-group-item-action" aria-current="true">
-														<div class="d-flex w-100 justify-content-between">
-														  <h5 class="mb-1">Giza</h5>
-														  <small>13 Points</small>
-														</div>	
-													</a>
-													<a href="#" class="list-group-item list-group-item-action" aria-current="true">
-														<div class="d-flex w-100 justify-content-between">
-														  <h5 class="mb-1">Alex</h5>
-														  <small>10 Points</small>
-														</div>	
-													</a>
-													<a href="#" class="list-group-item list-group-item-action" aria-current="true">
-														<div class="d-flex w-100 justify-content-between">
-														  <h5 class="mb-1">Dakahlia</h5>
-														  <small>8 Points</small>
-														</div>	
-													</a>
-													<a href="#" class="list-group-item list-group-item-action" aria-current="true">
-														<div class="d-flex w-100 justify-content-between">
-														  <h5 class="mb-1">Canal Cities</h5>
-														  <small>5 Points</small>
-														</div>	
-													</a>
-													<a href="#" class="list-group-item list-group-item-action" aria-current="true">
-														<div class="d-flex w-100 justify-content-between">
-														  <h5 class="mb-1">Fayoum</h5>
-														  <small>10 Points</small>
-														</div>	
-													</a>
-													<a href="#" class="list-group-item list-group-item-action" aria-current="true">
-														<div class="d-flex w-100 justify-content-between">
-														  <h5 class="mb-1">Menoufia</h5>
-														  <small>5 Points</small>
-														</div>	
-													</a>
-													<a href="#" class="list-group-item list-group-item-action" aria-current="true">
-														<div class="d-flex w-100 justify-content-between">
-														  <h5 class="mb-1">Giza</h5>
-														  <small>13 Points</small>
-														</div>	
-													</a>
-													<a href="#" class="list-group-item list-group-item-action" aria-current="true">
-														<div class="d-flex w-100 justify-content-between">
-														  <h5 class="mb-1">Alex</h5>
-														  <small>10 Points</small>
-														</div>	
-													</a>
-													<a href="#" class="list-group-item list-group-item-action" aria-current="true">
-														<div class="d-flex w-100 justify-content-between">
-														  <h5 class="mb-1">Dakahlia</h5>
-														  <small>8 Points</small>
-														</div>	
-													</a>
-													<a href="#" class="list-group-item list-group-item-action" aria-current="true">
-														<div class="d-flex w-100 justify-content-between">
-														  <h5 class="mb-1">Canal Cities</h5>
-														  <small>5 Points</small>
-														</div>	
-													</a>
-													<a href="#" class="list-group-item list-group-item-action" aria-current="true">
-														<div class="d-flex w-100 justify-content-between">
-														  <h5 class="mb-1">Fayoum</h5>
-														  <small>10 Points</small>
-														</div>	
-													</a>
-												</div>
-											</div>
+												<table class="table table-hover">
+													<thead>
+													  <tr>
+														<th scope="col"> City</th>
+														<th scope="col">Points</tr>
+													  </tr>
+													</thead>
+													<tbody>
+													  {% for pair in pairs %}
+													  <tr>
+													  <td> <a href="/siteDetail.html" >{{ pair[0]}}</a>  </td>
+													  <td>{{ pair[1]}} Points</td>
+													  </tr>
+													  {% endfor %}
+													</tbody>
+												</table>
+											
 										</div>
 									</div>
 								</div>
-								<div class="col-md-8">
-									<div class="mapcontainer" style="margin-top: 20px;">
-										<!--<div id="map-example" class="vmap"></div>-->
-										<div>
-											<iframe width="950" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
-												src="https://www.openstreetmap.org/export/embed.html?bbox=28.443603515625004%2C28.786918085420226%2C32.65136718750001%2C31.28793989264176&amp;layer=mapnik" 
-												style="border: 1px solid rgba(0, 0, 0, 0.24)">
-											</iframe>
-											<br/>
-											<small>
-												<a href="https://www.openstreetmap.org/#map=8/30.045/30.547">View Larger Map</a>
-											</small>
-										</div>
-									</div>
-								</div>
+								
+								
 							</div>
 						</div>
 					</div>
@@ -626,7 +552,6 @@
 	<!-- Atlantis DEMO methods, don't include it in your project! -->
 	<script src="/static/assets/js/setting-demo.js"></script>
 	<script src="/static/assets/js/demo.js"></script>
-	<script src="/static/assets/js/JQVMap/map.js"></script>
 	<script>
 		Circles.create({
 			id:'circles-1',
